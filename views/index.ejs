@@ -1,0 +1,33 @@
+<%- include("h&f/header.ejs") %>
+
+<div class="top">
+  <div class="day-container">
+    <p class="day"><%= date %><p>
+  </div>
+  <h1>Write Your DOTO's</h1>
+</div>
+<form class="add" action="/" method="post">
+    <input class="todoEnter" type="text" name="items" placeholder="weite the todo" autocomplete="off">
+    <button class="add-btn" type="submit" >add</button>
+</form>
+
+
+<div class="todocontainer">
+  <div class="todobox">
+    <input type="checkbox" class="checkbox"  />
+    <p class="todo">Wake up at 6.00</p>
+  </div>
+  <% for(i = 0; i < todo.length; i++) { %>
+    <div class="todobox">
+      <input type="checkbox" class="checkbox" />
+      <p class="todo"> <%= todo[i] %> </p>
+    </div>
+  <% } %>
+</div>
+
+
+
+
+<%- include("h&f/footer.ejs") %>
+
+
