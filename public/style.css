@@ -15,6 +15,24 @@ footer {
     text-align: center;
 }
 
+header {
+    margin-top: 5px;
+}
+
+
+.close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    /* border-radius: 10px; */
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .close:hover {background: #bbb;}
+  
+
 .top {
     display: flex;
 }
@@ -106,6 +124,7 @@ ul {
 
 .todocontainer {
     margin-top: 12px;
+    
 }
 
 .todobox {
@@ -119,6 +138,7 @@ ul {
     font-family: 'Bitter', serif;
     font-weight: 400;
     font-size: 20px;
+    position: relative;
 }
 
 .checkbox {

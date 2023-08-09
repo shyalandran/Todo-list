@@ -7,7 +7,7 @@
   <h1>Write Your DOTO's</h1>
 </div>
 <form class="add" action="/" method="post">
-    <input class="todoEnter" type="text" name="items" placeholder="weite the todo" autocomplete="off">
+    <input class="todoEnter" type="text" name="items" placeholder="write your todo's" autocomplete="off">
     <button class="add-btn" type="submit" >add</button>
 </form>
 
@@ -16,11 +16,13 @@
   <div class="todobox">
     <input type="checkbox" class="checkbox"  />
     <p class="todo">Wake up at 6.00</p>
+    <p class="close">&times;</p>
   </div>
   <% for(i = 0; i < todo.length; i++) { %>
     <div class="todobox">
       <input type="checkbox" class="checkbox" />
       <p class="todo"> <%= todo[i] %> </p>
+      <p class="close">&times;</p>
     </div>
   <% } %>
 </div>

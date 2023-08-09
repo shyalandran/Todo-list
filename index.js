@@ -23,7 +23,6 @@ app.get("/", (req,res) => {
 app.post("/", (req,res) => {
     let newItem = req.body.items;
     todos.push(newItem);
-    console.log(todos);
     res.redirect("/");
 });
 
